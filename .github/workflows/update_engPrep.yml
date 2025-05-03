@@ -1,0 +1,37 @@
+name: Update engPrep.js from schema
+
+on:
+  push:
+    paths:
+      - 'engine_schema.json'
+
+jobs:
+  update-engprep:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: 📂 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🛠️ Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: 🔧 Install dependencies (if needed)
+        run: |
+          pip install -r tools/requirements.txt || true
+
+      - name: 📚 Generate engPrep.js from engine_schema.json
+        run: |
+          python tools/build_engprep_js.py
+
+      - name: 🔄 Commit updated engPrep.js
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add docs/js/engPrep.js tools/logs/engprep_update.log
+          git commit -m "✨ Auto-update engPrep.js from schema"
+          git push
