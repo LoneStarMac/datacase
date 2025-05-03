@@ -11,6 +11,7 @@ jobs:
     defaults:
       run:
         shell: bash
+
     steps:
       - name: 📂 Checkout repo
         uses: actions/checkout@v3
@@ -20,18 +21,26 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: 🔧 Install dependencies (if needed)
+      - name: 🔧 Install Python dependencies
         run: |
-          pip install -r tools/requirements.txt || true
+          if [ -f tools/requirements.txt ]; then
+            pip install -r tools/requirements.txt || echo "No required packages"
+          fi
 
       - name: 📚 Generate engPrep.js from engine_schema.json
         run: |
+          mkdir -p tools/logs
           python tools/build_engprep_js.py
 
       - name: 🔄 Commit updated engPrep.js
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
           git add docs/js/engPrep.js tools/logs/engprep_update.log
-          git commit -m "✨ Auto-update engPrep.js from schema"
-          git push
+          if git diff --cached --quiet; then
+            echo "🟢 No changes to commit."
+          else
+            git commit -m "✨ Auto-update engPrep.js from schema"
+            git push
+          fi
