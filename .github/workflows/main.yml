@@ -1,0 +1,42 @@
+name: Validate Engine JSON Files
+
+on:
+  push:
+    paths:
+      - 'data/engines/**/*.json'
+      - 'schemas/**'
+      - 'tools/**'
+  pull_request:
+    paths:
+      - 'data/engines/**/*.json'
+      - 'schemas/**'
+      - 'tools/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate Engine JSON files
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install -r tools/requirements.txt || true  # optional: skip if no requirements
+
+      - name: Run engine schema validator
+        run: |
+          python tools/validate_engines.py
+
+      - name: Upload log file
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-log
+          path: tools/validation.log
