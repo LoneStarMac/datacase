@@ -29,8 +29,8 @@ jobs:
           python tools/generate_engine_csv.py
 
       - name: Upload generated CSV
-          uses: actions/upload-artifact@v3.1.3
-          with:
+        uses: actions/upload-artifact@v3.1.3
+        with:
           name: engines-csv
           path: data/engines.csv
 
