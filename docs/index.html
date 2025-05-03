@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Honda K-Series Engine Explorer</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <h1>Honda K-Series Engine Explorer</h1>
-    <input type="text" id="search" placeholder="Search engines...">
-    <table id="engineTable"></table>
-    <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datakase Engine Database</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Datakase</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bellPrep.html">Bellhousing Tool</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="engPrep.html">Engine Submission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/yourrepo">GitHub</a>
+          </li>
+        </ul>
+        <div class="ms-auto">
+          <button class="btn btn-outline-light me-2" onclick="exportVisibleCSV()">Export Visible to CSV</button>
+          <a class="btn btn-outline-light" href="data/engines.csv" download>Download Full CSV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="mb-4">Datakase Engine Database</h1>
+    <p class="lead">
+      This project collects and normalizes specifications for real-world engines and bellhousings. You can view, filter, and export the database below, or contribute your own data.
+    </p>
+    <div id="filter-controls" class="mb-3"></div>
+    <div id="engineTableContainer"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function exportVisibleCSV() {
+      const table = document.querySelector("#engineTableContainer table");
+      if (!table) return;
+      const rows = Array.from(table.rows);
+      const csv = rows.map(row =>
+        Array.from(row.cells).map(cell => '"' + cell.innerText.replace(/"/g, '""') + '"').join(",")
+      ).join("\n");
+
+      const blob = new Blob([csv], { type: "text/csv" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "filtered_engines.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+</body>
 </html>

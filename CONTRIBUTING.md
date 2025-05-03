@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to the **DataKase** engine database project! Whether you're adding new engine data, helping improve the frontend, or refining our validation tooling, your contributions are welcome.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 /datakase
@@ -17,7 +17,7 @@ Thank you for your interest in contributing to the **DataKase** engine database 
 
 ---
 
-## ✍️ Ways You Can Contribute
+## Ways You Can Contribute
 
 ### 1. Add a New Engine
 
@@ -42,7 +42,7 @@ Thank you for your interest in contributing to the **DataKase** engine database 
 
 ---
 
-## ✅ Validation Workflow
+## Validation Workflow
 
 Every commit to `main` triggers the following:
 
@@ -60,7 +60,7 @@ python generate_csv_from_json.py
 
 ---
 
-## ⚠️ Guidelines
+## Guidelines
 
 * **Use lowercase and underscores** for keys
 * All filenames should follow the pattern: `manufacturer.enginecode.json` (e.g., `honda.k20a.json`)
@@ -69,7 +69,7 @@ python generate_csv_from_json.py
 
 ---
 
-## 🙌 Acknowledgment and Review
+## Acknowledgment and Review
 
 * All user-submitted engines are marked as `usr_sub`
 * Maintainers will review submissions for promotion to `verified`
@@ -77,7 +77,7 @@ python generate_csv_from_json.py
 
 ---
 
-## 📬 Questions?
+## Questions?
 
 Open an issue or start a discussion on GitHub!
 

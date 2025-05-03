@@ -47,7 +47,7 @@ def generate_js():
         with open(SCHEMA_FILE, "r") as f:
             schema = json.load(f)
     except Exception as e:
-        log(f"❌ Failed to read schema: {e}")
+        log(f"Failed to read schema: {e}")
         return
 
     lines = [HEADER, TEMPLATE_START]
@@ -79,9 +79,9 @@ def generate_js():
     try:
         with open(OUTPUT_JS_FILE, "w") as f:
             f.write("\n".join(lines))
-        log(f"✅ Successfully generated {OUTPUT_JS_FILE}")
+        log(f"Successfully generated {OUTPUT_JS_FILE}")
     except Exception as e:
-        log(f"❌ Failed to write JS file: {e}")
+        log(f"Failed to write JS file: {e}")
 
 
 def log(message):
