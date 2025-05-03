@@ -1,0 +1,50 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS metadata
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
+
+# VSCodium settings
+.vscode/
+.vscode-test/
+
+# Python-related
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Logs and runtime
+*.log
+logs/
+tools/logs/
+
+# Backup and temp files
+*.bak
+*.swp
+*.swo
+*.tmp
+*~
+
+# Node modules (if used)
+node_modules/
+npm-debug.log*
+
+# macOS-specific caches
+.DS_Store
+.TemporaryItems
+.apdisk
+
+# Output folders (if any)
+dist/
+build/
