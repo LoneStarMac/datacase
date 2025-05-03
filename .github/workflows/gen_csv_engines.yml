@@ -20,11 +20,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install dependencies (if needed)
         run: |
           pip install -r tools/requirements.txt || true
 
-      - name: Run generate_engine_csv.py
+      - name: 🛠️ Run generate_engine_csv.py
         run: |
           python tools/generate_engine_csv.py
 
@@ -34,8 +34,8 @@ jobs:
           name: engines-csv
           path: data/engines.csv
 
-      - name: Upload log file
-        uses: actions/upload-artifact@v3.1.3
+      - name: Upload CSV log file
+        uses: actions/upload-artifact@v3
         with:
           name: csv-log
           path: tools/logs/generate_engine_csv.log
