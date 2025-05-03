@@ -5,38 +5,38 @@ on:
     paths:
       - 'data/engines/**/*.json'
       - 'schemas/**'
-      - 'tools/**'
+      - 'tools/schema_validator.py'
   pull_request:
     paths:
       - 'data/engines/**/*.json'
       - 'schemas/**'
-      - 'tools/**'
+      - 'tools/schema_validator.py'
 
 jobs:
-  validate:
+  validate-schema:
     runs-on: ubuntu-latest
-    name: Validate Engine JSON files
+    name: Check JSON files against schema
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Set up Python 3.x
-        uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
       - name: Install dependencies
         run: |
-          pip install -r tools/requirements.txt || true  # optional: skip if no requirements
+          python -m pip install --upgrade pip
 
-      - name: Run engine schema validator
+      - name: Run schema validator
         run: |
-          python tools/validate_engines.py
+          python tools/schema_validator.py
 
-      - name: Upload log file
-        if: always()
-        uses: actions/upload-artifact@v4
+      - name: Upload schema logs (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v3
         with:
-          name: validation-log
-          path: tools/validation.log
+          name: schema-check-log
+          path: tools/logs/schema_check.log
