@@ -23,7 +23,14 @@ jobs:
       - name: Install dependencies (if needed)
         run: |
           pip install -r tools/requirements.txt || true
-
+      - name: Check if CSV was created
+        run: |
+          if [ ! -f data/engines.csv ]; then
+            echo "engines.csv not found!"
+            exit 1
+          else
+            echo "engines.csv created successfully"
+          fi
       - name: 🛠️ Run generate_engine_csv.py
         run: |
           python tools/generate_engine_csv.py
