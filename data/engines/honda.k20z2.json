@@ -1,0 +1,50 @@
+{
+  "engine": "K20Z2",
+  "applications": [
+    {
+      "Application": "2006-2008 Honda Accord",
+      "Mkt": "EDM",
+      "Addl": NaN,
+      "Comp": "9.8:1",
+      "Power": "153",
+      "Power RPM": 6000.0,
+      "Torque": "139",
+      "Torque RPM": 4500.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": "RBA",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2006-2010 Honda Civic",
+      "Mkt": "SEA",
+      "Addl": NaN,
+      "Comp": "9.8:1",
+      "Power": "153",
+      "Power RPM": 6000.0,
+      "Torque": "139",
+      "Torque RPM": 4500.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": "RTB",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2006-2011 Acura CSX",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "9.8:1",
+      "Power": "153",
+      "Power RPM": 6000.0,
+      "Torque": "139",
+      "Torque RPM": 4500.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

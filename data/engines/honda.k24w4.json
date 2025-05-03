@@ -1,0 +1,35 @@
+{
+  "engine": "K24W4",
+  "applications": [
+    {
+      "Application": "2013-2018 Honda Accord",
+      "Mkt": "Thai",
+      "Addl": NaN,
+      "Comp": "10.1:1",
+      "Power": "174",
+      "Power RPM": 6200.0,
+      "Torque": "166",
+      "Torque RPM": 4000.0,
+      "Redline": 6500.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": "Multi Point"
+    },
+    {
+      "Application": "2013-present Honda Odyssey",
+      "Mkt": "Ex. JDM",
+      "Addl": NaN,
+      "Comp": "10.1:1",
+      "Power": "174",
+      "Power RPM": 6200.0,
+      "Torque": "166",
+      "Torque RPM": 4000.0,
+      "Redline": 6500.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

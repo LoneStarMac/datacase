@@ -1,0 +1,35 @@
+{
+  "engine": "K20A6",
+  "applications": [
+    {
+      "Application": "2003-2006 Honda Accord",
+      "Mkt": "ADM",
+      "Addl": NaN,
+      "Comp": "9.8:1",
+      "Power": "155",
+      "Power RPM": 6500.0,
+      "Torque": "140",
+      "Torque RPM": 4000.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": 2500.0,
+      "Intake Manifold": "RAA",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2003-2006 Honda Accord",
+      "Mkt": "EDM",
+      "Addl": NaN,
+      "Comp": "9.8:1",
+      "Power": "155",
+      "Power RPM": 6500.0,
+      "Torque": "140",
+      "Torque RPM": 4000.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": 2500.0,
+      "Intake Manifold": "RAA",
+      "Fuel Injection": NaN
+    }
+  ]
+}

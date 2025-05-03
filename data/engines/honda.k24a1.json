@@ -1,0 +1,20 @@
+{
+  "engine": "K24A1",
+  "applications": [
+    {
+      "Application": "2002-2006 Honda CR-V",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "9.6:1",
+      "Power": "160",
+      "Power RPM": 6000.0,
+      "Torque": "162",
+      "Torque RPM": 3600.0,
+      "Redline": 6500.0,
+      "Rev lmt": 7000.0,
+      "iVTEC Engagement": 2750.0,
+      "Intake Manifold": "PPA",
+      "Fuel Injection": NaN
+    }
+  ]
+}

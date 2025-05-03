@@ -1,0 +1,35 @@
+{
+  "engine": "K20Z1",
+  "applications": [
+    {
+      "Application": "2005-2006 Acura RSX Type S",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "210",
+      "Power RPM": 7800.0,
+      "Torque": "143",
+      "Torque RPM": 6200.0,
+      "Redline": 8100.0,
+      "Rev lmt": 8300.0,
+      "iVTEC Engagement": 5800.0,
+      "Intake Manifold": "PRB",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2005-2006 Honda Integra Type S",
+      "Mkt": "AU/NZDM",
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "210",
+      "Power RPM": 7800.0,
+      "Torque": "143",
+      "Torque RPM": 6200.0,
+      "Redline": 8100.0,
+      "Rev lmt": 8300.0,
+      "iVTEC Engagement": 5800.0,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

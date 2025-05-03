@@ -1,0 +1,35 @@
+{
+  "engine": "K24W7",
+  "applications": [
+    {
+      "Application": "2015-2018 Honda Spirior Si",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "11.6:1",
+      "Power": "202",
+      "Power RPM": 6800.0,
+      "Torque": "182",
+      "Torque RPM": 3900.0,
+      "Redline": 7000.0,
+      "Rev lmt": 5000.0,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2015-2020 Acura TLX",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "11.6:1",
+      "Power": "206",
+      "Power RPM": 6800.0,
+      "Torque": "182",
+      "Torque RPM": 3900.0,
+      "Redline": 7000.0,
+      "Rev lmt": 5000.0,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": "Direct"
+    }
+  ]
+}

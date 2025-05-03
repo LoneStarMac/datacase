@@ -1,0 +1,20 @@
+{
+  "engine": "K24Z6",
+  "applications": [
+    {
+      "Application": "2010-2011 Honda CR-V",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "180",
+      "Power RPM": 6800.0,
+      "Torque": "161",
+      "Torque RPM": 4400.0,
+      "Redline": 7100.0,
+      "Rev lmt": 7200.0,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

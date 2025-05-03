@@ -1,0 +1,20 @@
+{
+  "engine": "K24W9",
+  "applications": [
+    {
+      "Application": "2015-2019 Honda CR-V",
+      "Mkt": "USDM",
+      "Addl": NaN,
+      "Comp": "11.1:1",
+      "Power": "185",
+      "Power RPM": 6400.0,
+      "Torque": "181",
+      "Torque RPM": 3900.0,
+      "Redline": 6800.0,
+      "Rev lmt": 4800.0,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": "Direct"
+    }
+  ]
+}

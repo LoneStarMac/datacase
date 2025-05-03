@@ -1,0 +1,50 @@
+{
+  "engine": "K24A8",
+  "applications": [
+    {
+      "Application": "2006-2007 Honda Accord",
+      "Mkt": "USDM",
+      "Addl": NaN,
+      "Comp": "9.7:1",
+      "Power": "166",
+      "Power RPM": 5800.0,
+      "Torque": "160",
+      "Torque RPM": 4000.0,
+      "Redline": 6500.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": 2400.0,
+      "Intake Manifold": "RAA",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2007-2011 Honda Element",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "9.7:1",
+      "Power": "166",
+      "Power RPM": 5800.0,
+      "Torque": "161",
+      "Torque RPM": 4000.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": 2400.0,
+      "Intake Manifold": "PZD",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2008-2014 Honda Odyssey",
+      "Mkt": "JDM",
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "178",
+      "Power RPM": NaN,
+      "Torque": "161",
+      "Torque RPM": NaN,
+      "Redline": NaN,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

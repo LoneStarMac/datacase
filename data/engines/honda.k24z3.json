@@ -1,0 +1,35 @@
+{
+  "engine": "K24Z3",
+  "applications": [
+    {
+      "Application": "2008-2012 Honda Accord LX-S/EX/EX-L",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "190",
+      "Power RPM": 7000.0,
+      "Torque": "162",
+      "Torque RPM": 4400.0,
+      "Redline": 7100.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": 5100.0,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2009-2014 Acura TSX and Honda Accord",
+      "Mkt": "EU",
+      "Addl": "CU2/CW2",
+      "Comp": "11.0:1",
+      "Power": "201",
+      "Power RPM": 7000.0,
+      "Torque": "172",
+      "Torque RPM": 4300.0,
+      "Redline": 7100.0,
+      "Rev lmt": 7300.0,
+      "iVTEC Engagement": 5000.0,
+      "Intake Manifold": "R40",
+      "Fuel Injection": NaN
+    }
+  ]
+}

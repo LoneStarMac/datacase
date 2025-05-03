@@ -1,0 +1,20 @@
+{
+  "engine": "K20Z4",
+  "applications": [
+    {
+      "Application": "2007-2010 Honda Civic Type R",
+      "Mkt": "EDM",
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "201",
+      "Power RPM": 7800.0,
+      "Torque": "142",
+      "Torque RPM": 5600.0,
+      "Redline": 8000.0,
+      "Rev lmt": 8200.0,
+      "iVTEC Engagement": 5400.0,
+      "Intake Manifold": "RSP",
+      "Fuel Injection": NaN
+    }
+  ]
+}

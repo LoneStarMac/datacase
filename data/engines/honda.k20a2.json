@@ -1,0 +1,50 @@
+{
+  "engine": "K20A2",
+  "applications": [
+    {
+      "Application": "2001-2006 Honda Civic Type R",
+      "Mkt": "EDM",
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "200",
+      "Power RPM": 7400.0,
+      "Torque": "139",
+      "Torque RPM": 5900.0,
+      "Redline": 7900.0,
+      "Rev lmt": 8250.0,
+      "iVTEC Engagement": 5800.0,
+      "Intake Manifold": "PRB",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2002-2004 Acura RSX Type S",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "200",
+      "Power RPM": 7400.0,
+      "Torque": "142",
+      "Torque RPM": 6000.0,
+      "Redline": 7900.0,
+      "Rev lmt": 8250.0,
+      "iVTEC Engagement": 5800.0,
+      "Intake Manifold": "PRB",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2002-2004 Honda Integra Type R",
+      "Mkt": "AU/NZDM",
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "200",
+      "Power RPM": 7400.0,
+      "Torque": "142",
+      "Torque RPM": 6000.0,
+      "Redline": 7800.0,
+      "Rev lmt": 8100.0,
+      "iVTEC Engagement": 5800.0,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

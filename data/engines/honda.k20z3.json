@@ -1,0 +1,35 @@
+{
+  "engine": "K20Z3",
+  "applications": [
+    {
+      "Application": "2006-2011 Honda Civic Si",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "197",
+      "Power RPM": 7800.0,
+      "Torque": "139",
+      "Torque RPM": 6200.0,
+      "Redline": 8000.0,
+      "Rev lmt": 8300.0,
+      "iVTEC Engagement": 5800.0,
+      "Intake Manifold": "RBC",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2007-2010 Acura CSX Type S",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "11.0:1",
+      "Power": "197",
+      "Power RPM": 7800.0,
+      "Torque": "139",
+      "Torque RPM": 6200.0,
+      "Redline": 8000.0,
+      "Rev lmt": 8300.0,
+      "iVTEC Engagement": 5800.0,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

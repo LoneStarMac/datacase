@@ -1,0 +1,35 @@
+{
+  "engine": "K24V5",
+  "applications": [
+    {
+      "Application": "2015-2016 Honda CR-V",
+      "Mkt": "Thai",
+      "Addl": NaN,
+      "Comp": "10.1:1",
+      "Power": "174",
+      "Power RPM": 6200.0,
+      "Torque": "166",
+      "Torque RPM": 4000.0,
+      "Redline": 6500.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": "Multi Point"
+    },
+    {
+      "Application": "2017-2022 Honda CR-V",
+      "Mkt": "Thai",
+      "Addl": NaN,
+      "Comp": "10.1:1",
+      "Power": "170",
+      "Power RPM": 6200.0,
+      "Torque": "165",
+      "Torque RPM": 4000.0,
+      "Redline": 6500.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

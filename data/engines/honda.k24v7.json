@@ -1,0 +1,20 @@
+{
+  "engine": "K24V7",
+  "applications": [
+    {
+      "Application": "2016-2022 Acura ILX",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "11.6:1",
+      "Power": "201",
+      "Power RPM": 6800.0,
+      "Torque": "180",
+      "Torque RPM": 3800.0,
+      "Redline": 7000.0,
+      "Rev lmt": 5000.0,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": "Direct"
+    }
+  ]
+}

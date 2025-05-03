@@ -1,0 +1,20 @@
+{
+  "engine": "K24Z1",
+  "applications": [
+    {
+      "Application": "2007-2009 Honda CR-V",
+      "Mkt": "RE3",
+      "Addl": "RE4",
+      "Comp": "9.7:1",
+      "Power": "166",
+      "Power RPM": 5800.0,
+      "Torque": "161",
+      "Torque RPM": 4200.0,
+      "Redline": 6500.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

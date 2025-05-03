@@ -1,0 +1,35 @@
+{
+  "engine": "K20A1",
+  "applications": [
+    {
+      "Application": "2001-2006 Honda Stream",
+      "Mkt": "RN3",
+      "Addl": "FWD",
+      "Comp": "9.7:1",
+      "Power": "156",
+      "Power RPM": 6500.0,
+      "Torque": "139",
+      "Torque RPM": 4000.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": "PNA",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2001-2006 Honda Stream",
+      "Mkt": "RN4",
+      "Addl": "AWD",
+      "Comp": "9.8:1",
+      "Power": "158",
+      "Power RPM": 6500.0,
+      "Torque": "140",
+      "Torque RPM": 4000.0,
+      "Redline": 6800.0,
+      "Rev lmt": NaN,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": "PNC",
+      "Fuel Injection": NaN
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "engine": "K24Z2",
+  "applications": [
+    {
+      "Application": "2008-2012 Honda Accord LX/LX-P",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "177",
+      "Power RPM": 6500.0,
+      "Torque": "161",
+      "Torque RPM": 4300.0,
+      "Redline": 6800.0,
+      "Rev lmt": 7100.0,
+      "iVTEC Engagement": 5100.0,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2016-2020 Proton Perdana",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "177",
+      "Power RPM": 6500.0,
+      "Torque": "161",
+      "Torque RPM": 4300.0,
+      "Redline": 6800.0,
+      "Rev lmt": 7100.0,
+      "iVTEC Engagement": NaN,
+      "Intake Manifold": NaN,
+      "Fuel Injection": NaN
+    }
+  ]
+}

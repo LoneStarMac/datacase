@@ -1,0 +1,147 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Engine Specification Schema",
+    "type": "object",
+    "required": [
+      "manufacturer",
+      "code",
+      "displacement_cc",
+      "cylinders",
+      "applications"
+    ],
+    "properties": {
+      "manufacturer": {
+        "type": "string"
+      },
+      "code": {
+        "type": "string"
+      },
+      "displacement_cc": {
+        "type": "integer"
+      },
+      "cylinders": {
+        "type": "integer"
+      },
+      "valves_per_cyl": {
+        "type": "integer"
+      },
+      "head_material": {
+        "type": "string"
+      },
+      "block_material": {
+        "type": "string"
+      },
+      "bore_mm": {
+        "type": "number"
+      },
+      "stroke_mm": {
+        "type": "number"
+      },
+      "crank_type": {
+        "type": "string"
+      },
+      "rod_material": {
+        "type": "string"
+      },
+      "piston_material": {
+        "type": "string"
+      },
+      "rotation": {
+        "type": "string"
+      },
+      "vtec": {
+        "type": "boolean"
+      },
+      "turbocharged": {
+        "type": "boolean"
+      },
+      "supercharged": {
+        "type": "boolean"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "applications": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "Application",
+            "Power",
+            "Torque"
+          ],
+          "properties": {
+            "Application": {
+              "type": "string"
+            },
+            "Mkt": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Addl": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Comp": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Power": {
+              "type": "number"
+            },
+            "Power RPM": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "Torque": {
+              "type": "number"
+            },
+            "Torque RPM": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "Redline": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "Rev lmt": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "iVTEC Engagement": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "Intake Manifold": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Fuel Injection": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }

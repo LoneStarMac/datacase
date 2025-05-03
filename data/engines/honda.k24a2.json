@@ -1,0 +1,35 @@
+{
+  "engine": "K24A2",
+  "applications": [
+    {
+      "Application": "2004-2005 Acura TSX",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "197",
+      "Power RPM": 6800.0,
+      "Torque": "166",
+      "Torque RPM": 4500.0,
+      "Redline": 7100.0,
+      "Rev lmt": 7200.0,
+      "iVTEC Engagement": 6000.0,
+      "Intake Manifold": "RBB",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2006-2008 Acura TSX",
+      "Mkt": NaN,
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "205",
+      "Power RPM": 7000.0,
+      "Torque": "164",
+      "Torque RPM": 4500.0,
+      "Redline": 7100.0,
+      "Rev lmt": 7200.0,
+      "iVTEC Engagement": 6000.0,
+      "Intake Manifold": "RBB",
+      "Fuel Injection": NaN
+    }
+  ]
+}

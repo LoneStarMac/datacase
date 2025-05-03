@@ -1,0 +1,35 @@
+{
+  "engine": "K24A3",
+  "applications": [
+    {
+      "Application": "2003-2007 Honda Accord",
+      "Mkt": "EDM",
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "190 HP",
+      "Power RPM": 6800.0,
+      "Torque": "171",
+      "Torque RPM": 4500.0,
+      "Redline": 7200.0,
+      "Rev lmt": 7300.0,
+      "iVTEC Engagement": 6000.0,
+      "Intake Manifold": "RBB",
+      "Fuel Injection": NaN
+    },
+    {
+      "Application": "2003-2007 Honda Accord Euro",
+      "Mkt": "AU/NZDM",
+      "Addl": NaN,
+      "Comp": "10.5:1",
+      "Power": "190 HP",
+      "Power RPM": 6800.0,
+      "Torque": "171",
+      "Torque RPM": 4500.0,
+      "Redline": 7200.0,
+      "Rev lmt": 7300.0,
+      "iVTEC Engagement": 6000.0,
+      "Intake Manifold": "RBB",
+      "Fuel Injection": NaN
+    }
+  ]
+}
