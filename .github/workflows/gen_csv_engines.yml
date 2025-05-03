@@ -8,12 +8,12 @@ on:
 
 jobs:
   generate-csv:
-    name: Generate engines.csv
+    name: Generate engines csv
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -36,13 +36,13 @@ jobs:
           python tools/generate_engine_csv.py
 
       - name: Upload generated CSV
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: engines-csv
           path: data/engines.csv
 
       - name: Upload CSV log file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: csv-log
           path: tools/logs/generate_engine_csv.log
