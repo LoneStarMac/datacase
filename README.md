@@ -15,7 +15,7 @@ Compiled from Wikipedia, official JDM catalogs, and user-curated entries.
 
 ### Live Preview
 
-You can filter and sort engines via the frontend tool in `/frontend/`.
+You can filter and sort engines via the frontend tool in `/code/`.
 
 ### Contributing
 
