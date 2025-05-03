@@ -2,19 +2,19 @@
 
 `datakase` is a structured engine specification project focused on organizing detailed metadata for internal combustion engines—beginning with the Honda K-series family. It includes tools for validating, transforming, visualizing, and filtering engine data in JSON and CSV formats.
 
-## 🔍 Features
+## Features
 
-* 📁 Engine JSON database (1 file per engine code)
-* ✅ Automated schema validation and migration script
-* 📜 JSON Schema definitions
-* 🌐 GitHub Pages-powered website for interactive browsing
-* 🔄 CI/CD pipelines for schema enforcement and CSV generation
-* 📊 CSV generation of all engine records
-* 🗃 Extendable for any manufacturer or engine type (LS, 4BT, etc.)
+* Engine JSON database (1 file per engine code)
+* Automated schema validation and migration script
+* JSON Schema definitions
+* GitHub Pages-powered website for interactive browsing
+* CI/CD pipelines for schema enforcement and CSV generation
+* CSV generation of all engine records
+* Extendable for any manufacturer or engine type (LS, 4BT, etc.)
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```bash
 .
@@ -44,11 +44,11 @@
 
 ---
 
-## ⚙️ GitHub Actions
+## GitHub Actions
 
 Two automated scripts run upon every push to `main`:
 
-### ✅ Schema Validator
+### Schema Validator
 
 * Scans all `.json` files in `data/engines/`
 * Loads schema from either:
@@ -58,7 +58,7 @@ Two automated scripts run upon every push to `main`:
 * Fixes structure issues, renames invalid keys, appends log
 * Respects fields like `*_old`, `*_invalid`, or missing fields
 
-### 📄 CSV Generator
+### CSV Generator
 
 * Generates `engines.csv` from the latest JSON files
 * Stored in `/data/engines.csv`
@@ -66,7 +66,7 @@ Two automated scripts run upon every push to `main`:
 
 ---
 
-## 🧪 How to Run Locally
+## How to Run Locally
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/datakase.git
@@ -79,7 +79,7 @@ Make sure Python 3.8+ is installed and your working directory has access to the 
 
 ---
 
-## 🌐 GitHub Pages Website
+## GitHub Pages Website
 
 The site lives under the `docs/` directory and is hosted at:
 
@@ -105,7 +105,7 @@ Then visit `http://localhost:8000`.
 
 ---
 
-## 🧰 Contributing Engines
+## Contributing Engines
 
 1. Add new JSON files to `data/engines/`, following the format of existing files.
 2. Validate using `validate_and_migrate.py`
@@ -119,7 +119,7 @@ File names should use this format:
 
 ---
 
-## 📚 Data Sources
+## Data Sources
 
 This repository aggregates engine data from a wide range of publicly available sources. While we aim for accuracy, all contributed or derived data should be verified against official specifications before use in critical applications.
 
@@ -149,13 +149,13 @@ We welcome contributors to cite new or corrected data sources in PRs to improve 
 
 ---
 
-## 📖 License
+## License
 
 MIT License — see `LICENSE` for full terms.
 
 ---
 
-## ✨ Future Plans
+## Future Plans
 
 * SVG + 3D engine/bellhousing diagrams (origin-centered)
 * Swap fitment guides
