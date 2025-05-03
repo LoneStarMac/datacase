@@ -1,0 +1,41 @@
+name: Generate Engine CSV
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-csv:
+    name: Generate engines.csv
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r tools/requirements.txt || true
+
+      - name: Run generate_engine_csv.py
+        run: |
+          python tools/generate_engine_csv.py
+
+      - name: Upload generated CSV
+        uses: actions/upload-artifact@v3
+        with:
+          name: engines-csv
+          path: data/engines.csv
+
+      - name: Upload log file
+        uses: actions/upload-artifact@v3
+        with:
+          name: csv-log
+          path: tools/logs/generate_engine_csv.log
