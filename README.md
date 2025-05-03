@@ -15,7 +15,7 @@ Compiled from Wikipedia, official JDM catalogs, and user-curated entries.
 
 ### Live Preview
 
-You can filter and sort engines via the frontend tool in `/code/`.
+You can filter and sort engines via the frontend tool in `/code/` on GitHub pages: https://lonestarmac.github.io/datakase/
 
 ### Contributing
 
