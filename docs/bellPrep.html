@@ -7,35 +7,12 @@
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script defer src="js/bellPrep.js"></script>
   <script defer src="js/prepTool.js"></script>
-  <style>
-    #previewContainer {
-      position: relative;
-      max-width: 800px;
-      margin-top: 20px;
-    }
-    #imageLayer {
-      position: relative;
-      width: 100%;
-    }
-    #uploadedImage {
-      width: 100%;
-      opacity: 0.4;
-      display: block;
-    }
-    #svgOverlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 </head>
 <body>
-  <h1>🔧 Bellhousing Upload & Prep Tool</h1>
-
+  <h1>Bellhousing Upload & Prep Tool</h1>
   <section>
     <h2>1. Upload Your Files</h2>
     <form id="prepForm">
@@ -72,12 +49,12 @@
       <label>Y (mm): <input type="number" id="boltY" /></label>
       <label>Diameter (mm): <input type="number" id="boltDia" /></label>
       <label>Notes: <input type="text" id="boltNotes" /></label>
-      <button type="button" onclick="addBoltHole()">➕ Add Hole</button>
+      <button type="button" onclick="addBoltHole()">Add Hole</button>
     </fieldset>
 
     <div>
-      <button type="button" onclick="clearBoltHoles()">🗑 Clear Holes</button>
-      <button type="button" onclick="generateBellhousingJSON()">🛠 Generate JSON</button>
+      <button type="button" onclick="clearBoltHoles()">Clear Holes</button>
+      <button type="button" onclick="generateBellhousingJSON()">Generate JSON</button>
     </div>
   </form>
 
@@ -161,7 +138,7 @@ function generateBellhousingJSON() {
       <li>Extract the ZIP on your machine.</li>
       <li>In your forked repository, add the image, JSON, and SVG to the correct folder.</li>
       <li>Commit with a message like: <code>Add bellhousing data for Honda K20A</code></li>
-      <li>Push and make a pull request! ✅</li>
+      <li>Push and make a pull request!</li>
     </ol>
   </section>
 </body>
