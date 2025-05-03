@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engine JSON Builder</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Engine JSON Builder</h1>
+    <p>Use this form to describe any engine. When you're done, download the .json file and submit it to the repository.</p>
+
+    <form id="engineForm">
+      <label>Manufacturer:
+        <input type="text" name="manufacturer" required />
+      </label>
+
+      <label>Engine Code:
+        <input type="text" name="engine" required />
+      </label>
+
+      <label>Displacement (cc):
+        <input type="number" name="displacement_cc" />
+      </label>
+
+      <label>Configuration:
+        <input type="text" name="configuration" placeholder="e.g., I4, V6" />
+      </label>
+
+      <label>Block Material:
+        <input type="text" name="block_material" />
+      </label>
+
+      <label>Head Material:
+        <input type="text" name="head_material" />
+      </label>
+
+      <label>Valves per Cylinder:
+        <input type="number" name="valves_per_cyl" />
+      </label>
+
+      <label>VVT Type:
+        <input type="text" name="VVT_type" />
+      </label>
+
+      <label>VVT Engagement RPM:
+        <input type="number" name="VVT_engage" />
+      </label>
+
+      <label>Power (HP):
+        <input type="number" name="pwr_hp" />
+      </label>
+
+      <label>Power (kW):
+        <input type="number" name="pwr_kw" />
+      </label>
+
+      <label>Power Measurement Type:
+        <input type="text" name="pwr_type" placeholder="e.g., SAE, DIN" />
+      </label>
+
+      <label>Forced Induction:
+        <select name="forced_induction">
+          <option value="none">None</option>
+          <option value="turbo">Turbo</option>
+          <option value="supercharger">Supercharger</option>
+        </select>
+      </label>
+
+      <label>Induction Pressure (psi):
+        <input type="number" name="induction_pressure" />
+      </label>
+
+      <label>Status:
+        <select name="status">
+          <option value="usr_sub">User Submitted</option>
+          <option value="verified">Verified</option>
+          <option value="official">Official</option>
+        </select>
+      </label>
+
+      <button type="submit">Generate JSON</button>
+    </form>
+
+    <a id="downloadLink" style="display:none">Download JSON</a>
+  </div>
+
+  <script src="./js/engPrep.js"></script>
+</body>
+</html>

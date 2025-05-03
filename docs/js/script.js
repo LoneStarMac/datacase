@@ -1,4 +1,4 @@
-fetch('../data/k-series-engines.csv')
+fetch('k-series-engines.csv')
   .then(res => res.text())
   .then(text => {
     const rows = text.trim().split('\n');

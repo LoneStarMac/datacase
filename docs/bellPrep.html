@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bellhousing Prep Tool</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script defer src="js/prepTool.js"></script>
+  <style>
+    #previewContainer {
+      position: relative;
+      max-width: 800px;
+      margin-top: 20px;
+    }
+    #imageLayer {
+      position: relative;
+      width: 100%;
+    }
+    #uploadedImage {
+      width: 100%;
+      opacity: 0.4;
+      display: block;
+    }
+    #svgOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔧 Bellhousing Upload & Prep Tool</h1>
+
+  <section>
+    <h2>1. Upload Your Files</h2>
+    <form id="prepForm">
+      <label for="jsonFile">Upload bolt pattern JSON:</label>
+      <input type="file" id="jsonFile" accept="application/json" required><br><br>
+
+      <label for="traceImage">Upload traced image of bellhousing:</label>
+      <input type="file" id="traceImage" accept="image/*" required><br><br>
+
+      <button type="submit">Generate SVG & Overlay</button>
+    </form>
+  </section>
+<!-- Add this inside bellPrep.html under Step 1 or as a new section -->
+<section id="manual-json-entry" class="card">
+  <h2>1.5 Define Bellhousing Geometry (Manual Entry)</h2>
+  <p>If you don't have a JSON file, use this form to build one from your measurements.</p>
+
+  <form id="geometryForm">
+    <label>Bellhousing Name: <input type="text" id="bellName" required /></label><br />
+    <label>Engine Code: <input type="text" id="engineCode" required /></label><br />
+    <label>Manufacturer: <input type="text" id="manufacturer" required /></label><br />
+
+    <fieldset>
+      <legend>Crankshaft Center</legend>
+      <label>X (mm): <input type="number" id="centerX" required /></label>
+      <label>Y (mm): <input type="number" id="centerY" required /></label>
+      <label>Diameter (mm): <input type="number" id="crankDia" required /></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Add Bolt Hole</legend>
+      <label>Label (e.g. B1): <input type="text" id="boltLabel" /></label>
+      <label>X (mm): <input type="number" id="boltX" /></label>
+      <label>Y (mm): <input type="number" id="boltY" /></label>
+      <label>Diameter (mm): <input type="number" id="boltDia" /></label>
+      <label>Notes: <input type="text" id="boltNotes" /></label>
+      <button type="button" onclick="addBoltHole()">➕ Add Hole</button>
+    </fieldset>
+
+    <div>
+      <button type="button" onclick="clearBoltHoles()">🗑 Clear Holes</button>
+      <button type="button" onclick="generateBellhousingJSON()">🛠 Generate JSON</button>
+    </div>
+  </form>
+
+  <canvas id="boltPreview" width="300" height="300" style="border:1px solid #ccc; margin-top:1em;"></canvas>
+
+  <h3>Output JSON</h3>
+  <textarea id="jsonEditor" rows="12" style="width:100%; font-family:monospace;"></textarea>
+</section>
+
+<script>
+let boltHoles = [];
+
+function addBoltHole() {
+  const label = document.getElementById('boltLabel').value;
+  const x = parseFloat(document.getElementById('boltX').value);
+  const y = parseFloat(document.getElementById('boltY').value);
+  const dia = parseFloat(document.getElementById('boltDia').value);
+  const notes = document.getElementById('boltNotes').value;
+  if (!label || isNaN(x) || isNaN(y)) return alert("Label, X, and Y are required.");
+  boltHoles.push({ label, x, y, diameter: dia || null, notes });
+  drawPreview();
+}
+
+function clearBoltHoles() {
+  boltHoles = [];
+  drawPreview();
+}
+
+function drawPreview() {
+  const canvas = document.getElementById('boltPreview');
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = '#333';
+  boltHoles.forEach(b => {
+    ctx.beginPath();
+    ctx.arc(b.x, b.y, (b.diameter || 8) / 2, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillText(b.label, b.x + 4, b.y - 4);
+  });
+}
+
+function generateBellhousingJSON() {
+  const data = {
+    name: document.getElementById('bellName').value,
+    engine_code: document.getElementById('engineCode').value,
+    manufacturer: document.getElementById('manufacturer').value,
+    crank_center: {
+      x: parseFloat(document.getElementById('centerX').value),
+      y: parseFloat(document.getElementById('centerY').value),
+      diameter: parseFloat(document.getElementById('crankDia').value)
+    },
+    bolt_holes: boltHoles
+  };
+  document.getElementById('jsonEditor').value = JSON.stringify(data, null, 2);
+}
+</script>
+
+  <section>
+    <h2>2. Preview & Annotate</h2>
+    <div id="previewContainer">
+      <div id="imageLayer">
+        <img id="uploadedImage" src="" alt="Uploaded tracing" />
+        <svg id="svgOverlay"></svg>
+      </div>
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <div id="jsonStatus"></div>
+    <textarea id="jsonEditor" rows="10" cols="80" placeholder="Edit JSON if needed..."></textarea>
+  </section>
+
+  <section>
+    <h2>3. Export</h2>
+    <button id="generateSvg">Generate SVG</button>
+    <button id="downloadAll">Download All Files as ZIP</button>
+  </section>
+
+  <section>
+    <h2>4. How to Submit</h2>
+    <ol>
+      <li>Click "Download All Files as ZIP".</li>
+      <li>Extract the ZIP on your machine.</li>
+      <li>In your forked repository, add the image, JSON, and SVG to the correct folder.</li>
+      <li>Commit with a message like: <code>Add bellhousing data for Honda K20A</code></li>
+      <li>Push and make a pull request! ✅</li>
+    </ol>
+  </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bellhousing",
+  "type": "object",
+  "required": ["engine_code", "crank_center", "bolt_holes", "outline_points", "landmarks", "status"],
+  "properties": {
+    "engine_code": {
+      "type": "string",
+      "description": "A unique engine identifier, e.g., honda.k20a"
+    },
+    "crank_center": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "The crankshaft center coordinates, usually [0, 0]"
+    },
+    "bolt_holes": {
+      "type": "object",
+      "description": "Bolt hole positions relative to crankshaft center",
+      "patternProperties": {
+        "^B\\d+$": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "minProperties": 1
+    },
+    "outline_points": {
+      "type": "array",
+      "description": "The traced outer edge of the bellhousing",
+      "items": {
+        "type": "array",
+        "items": { "type": "number" },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 3
+    },
+    "landmarks": {
+      "type": "object",
+      "required": ["top", "bottom", "left", "right"],
+      "properties": {
+        "top": { "$ref": "#/$defs/point" },
+        "bottom": { "$ref": "#/$defs/point" },
+        "left": { "$ref": "#/$defs/point" },
+        "right": { "$ref": "#/$defs/point" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["usr_sub", "verified", "official"]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "image_trace_overlay": {
+      "type": "string",
+      "description": "Relative path to overlay image (optional)"
+    },
+    "svg_generated": {
+      "type": "string",
+      "description": "Relative path to generated SVG file (optional)"
+    }
+  },
+  "$defs": {
+    "point": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  },
+  "additionalProperties": false
+}
