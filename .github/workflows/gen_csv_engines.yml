@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -20,10 +20,15 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies (if needed)
+      - name: Install Python dependencies
         run: |
           pip install -r tools/requirements.txt || true
-      - name: Check if CSV was created
+
+      - name: Run generate_engine_csv.py
+        run: |
+          python tools/generate_engine_csv.py
+
+      - name: Check if engines.csv was created
         run: |
           if [ ! -f data/engines.csv ]; then
             echo "engines.csv not found!"
@@ -31,17 +36,22 @@ jobs:
           else
             echo "engines.csv created successfully"
           fi
-      - name: 🛠️ Run generate_engine_csv.py
-        run: |
-          python tools/generate_engine_csv.py
 
-      - name: Upload generated CSV
+      - name: Commit updated engines.csv and log
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add data/engines.csv tools/logs/generate_engine_csv.log
+          git commit -m "Auto-update engines.csv from JSON files"
+          git push
+
+      - name: Upload generated CSV as artifact
         uses: actions/upload-artifact@v4
         with:
           name: engines-csv
           path: data/engines.csv
 
-      - name: Upload CSV log file
+      - name: Upload CSV log file as artifact
         uses: actions/upload-artifact@v4
         with:
           name: csv-log
