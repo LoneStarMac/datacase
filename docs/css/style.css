@@ -3,3 +3,25 @@ input { margin-bottom: 1em; width: 300px; padding: 0.5em; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid #ccc; padding: 0.4em; }
 th { background-color: #eee; }
+#previewContainer {
+    position: relative;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  #imageLayer {
+    position: relative;
+    width: 100%;
+  }
+  #uploadedImage {
+    width: 100%;
+    opacity: 0.4;
+    display: block;
+  }
+  #svgOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
