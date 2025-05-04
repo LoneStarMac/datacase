@@ -12,7 +12,12 @@
 <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
 <script src="js/engTable.js"></script>
 <link rel="stylesheet" href="css/style.css" />
-  
+<script>
+    // Optional: Store preference in localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    }
+  </script>
 </head>
 <body>
     <header>
