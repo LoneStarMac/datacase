@@ -34,6 +34,7 @@
         <!-- Search box -->
         <div>
           <input type="text" id="mainSearchBox" class="form-control" placeholder="Search engine data..." oninput="filterMainTable()">
+          <button class="btn btn-outline-light ms-2" onclick="toggleDarkMode()">🌙</button>
         </div>
       </div>
     </div>
@@ -197,5 +198,14 @@ function generateBellhousingJSON() {
       <li>Push and make a pull request!</li>
     </ol>
   </section>
-</body>
+  <script>
+    function toggleDarkMode() {
+      const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-bs-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+  </script>
+  </body>
+
 </html>

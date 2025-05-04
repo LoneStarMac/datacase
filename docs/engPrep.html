@@ -27,12 +27,13 @@
               </div>
             </div>
       
-            <!-- Search box -->
-            <div>
-              <input type="text" id="mainSearchBox" class="form-control" placeholder="Search engine data..." oninput="filterMainTable()">
-            </div>
+        <!-- Search box -->
+        <div>
+            <input type="text" id="mainSearchBox" class="form-control" placeholder="Search engine data..." oninput="filterMainTable()">
+            <button class="btn btn-outline-light ms-2" onclick="toggleDarkMode()">🌙</button>
           </div>
         </div>
+      </div>
       
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
@@ -144,5 +145,14 @@
   </div>
 
   <script src="./js/engPrep.js"></script>
-</body>
+  <script>
+    function toggleDarkMode() {
+      const currentTheme = document.documentElement.getAttribute('data-bs-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-bs-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+  </script>
+  </body>
+
 </html>
