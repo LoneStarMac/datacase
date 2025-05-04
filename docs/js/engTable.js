@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("data/engines.csv");
     const csvText = await response.text();
   
+    if (!csv || !csv.trim()) {
+        console.error("CSV is empty or not loaded properly.");
+        return;
+      }
+
     const table = new Tabulator("#engineTable", {
       data: parseCSV(csvText),
       layout: "fitColumns",

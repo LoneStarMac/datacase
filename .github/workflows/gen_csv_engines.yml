@@ -45,13 +45,18 @@ jobs:
           git commit -m "Auto-update engines.csv from JSON files"
           git push
 
-      - name: Upload generated CSV as artifact
+      - name: Move generated CSV to docs/data
+        run: |
+          mkdir -p docs/data
+          mv data/engines.csv docs/data/engines.csv
+
+      - name: Upload generated CSV
         uses: actions/upload-artifact@v4
         with:
           name: engines-csv
-          path: data/engines.csv
+          path: docs/data/engines.csv
 
-      - name: Upload CSV log file as artifact
+      - name: Upload CSV log file
         uses: actions/upload-artifact@v4
         with:
           name: csv-log
