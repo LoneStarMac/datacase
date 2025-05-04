@@ -30,7 +30,7 @@ jobs:
 
       - name: Check if engines.csv was created
         run: |
-          if [ ! -f data/engines.csv ]; then
+          if [ ! -f docs/data/engines.csv ]; then
             echo "engines.csv not found!"
             exit 1
           else
@@ -41,7 +41,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add data/engines.csv tools/logs/generate_engine_csv.log
+          git add docs/data/engines.csv tools/logs/generate_engine_csv.log
           git commit -m "Auto-update engines.csv from JSON files"
           git push
 
