@@ -1,0 +1,88 @@
+{
+  "manufacturer": "GM",
+  "code": "L59",
+  "displacement_cc": 5328,
+  "cylinders": 8,
+  "configuration": "V",
+  "valves_per_cyl": 2,
+  "head_material": "aluminum",
+  "block_material": "cast iron",
+  "bore_mm": 96.0,
+  "stroke_mm": 92.0,
+  "turbocharged": false,
+  "supercharged": false,
+  "dimensions": {
+    "length_mm": 660,
+    "width_mm": 550,
+    "height_mm": 690,
+    "weight_kg": 236,
+    "weight_dry_kg": 215
+  },
+  "bellhousing_pattern": "GM LS",
+  "engine_mount_style": "GM truck",
+  "oilpan_orientation": "rear-sump",
+  "swap_tags": [
+    "junkyard_common",
+    "iron_block",
+    "ls_swap",
+    "gen3_ls",
+    "flex_fuel"
+  ],
+  "common_swap_candidates": [
+    "S10/S15",
+    "Fox body Mustang",
+    "AE86",
+    "RX-7",
+    "MX-5",
+    "240SX",
+    "FJ80",
+    "GM A-body",
+    "GM G-body",
+    "GM F-body"
+  ],
+  "notes": "The L59 is mechanically identical to the LM7 5.3L iron-block Gen III LS but calibrated for E85/flex-fuel operation. Uses the same 96mm bore, 92mm stroke, 9.5:1 compression, and cathedral-port aluminum heads. The ECM and injectors are sized for flex-fuel, making it a notable swap candidate for builds targeting E85 compatibility from the factory tune. Swappers typically re-tune regardless, so the flex-fuel hardware is a bonus. Uses 24x reluctor wheel. Oil pan swap required for most car chassis. Frequently misidentified as LM7 in salvage yards.",
+  "applications": [
+    {
+      "Application": "2001-2007 Chevrolet Silverado 1500 (5.3L FlexFuel)",
+      "Mkt": "USA",
+      "Addl": "E85/gasoline flex-fuel",
+      "Comp": "9.5:1",
+      "Power": 270,
+      "Power RPM": 5200,
+      "Torque": 315,
+      "Torque RPM": 4000,
+      "Redline": 5600,
+      "Rev lmt": 5800,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI (flex-fuel calibration)"
+    },
+    {
+      "Application": "2001-2007 GMC Sierra 1500 (5.3L FlexFuel)",
+      "Mkt": "USA",
+      "Addl": "E85/gasoline flex-fuel",
+      "Comp": "9.5:1",
+      "Power": 270,
+      "Power RPM": 5200,
+      "Torque": 315,
+      "Torque RPM": 4000,
+      "Redline": 5600,
+      "Rev lmt": 5800,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI (flex-fuel calibration)"
+    },
+    {
+      "Application": "2002-2006 Chevrolet Avalanche (5.3L FlexFuel)",
+      "Mkt": "USA",
+      "Addl": "E85/gasoline flex-fuel",
+      "Comp": "9.5:1",
+      "Power": 285,
+      "Power RPM": 5200,
+      "Torque": 325,
+      "Torque RPM": 4000,
+      "Redline": 5600,
+      "Rev lmt": 5800,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI (flex-fuel calibration)"
+    }
+  ]
+}

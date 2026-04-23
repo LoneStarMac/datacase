@@ -1,0 +1,102 @@
+{
+  "manufacturer": "GM",
+  "code": "LQ4",
+  "displacement_cc": 5967,
+  "cylinders": 8,
+  "configuration": "V",
+  "valves_per_cyl": 2,
+  "head_material": "aluminum",
+  "block_material": "cast iron",
+  "bore_mm": 101.6,
+  "stroke_mm": 92.0,
+  "turbocharged": false,
+  "supercharged": false,
+  "dimensions": {
+    "length_mm": 660,
+    "width_mm": 550,
+    "height_mm": 690,
+    "weight_kg": 236,
+    "weight_dry_kg": 215
+  },
+  "bellhousing_pattern": "GM LS",
+  "engine_mount_style": "GM truck",
+  "oilpan_orientation": "rear-sump",
+  "swap_tags": [
+    "junkyard_common",
+    "iron_block",
+    "ls_swap",
+    "gen3_ls",
+    "high_displacement"
+  ],
+  "common_swap_candidates": [
+    "S10/S15",
+    "Fox body Mustang",
+    "AE86",
+    "RX-7",
+    "MX-5",
+    "240SX",
+    "FJ80",
+    "GM A-body",
+    "GM G-body",
+    "GM F-body"
+  ],
+  "notes": "The LQ4 is the standard 6.0L iron-block LS found in GMT800 heavy-duty trucks and full-size Express/Savana vans. Lower compression (9.4:1) than the LQ9 but otherwise nearly identical externally. Uses 24x reluctor wheel (Gen III). Frequently turbocharged in swap applications due to large displacement and iron block strength. Heads (cathedral port) flow well and are interchangeable with other Gen III engines. Oil pan swap required for most car chassis installations.",
+  "applications": [
+    {
+      "Application": "2001-2007 Chevrolet Silverado 2500HD/3500 (6.0L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "9.4:1",
+      "Power": 300,
+      "Power RPM": 4400,
+      "Torque": 360,
+      "Torque RPM": 4000,
+      "Redline": 5200,
+      "Rev lmt": 5400,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "2001-2007 GMC Sierra 2500HD/3500 (6.0L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "9.4:1",
+      "Power": 300,
+      "Power RPM": 4400,
+      "Torque": 360,
+      "Torque RPM": 4000,
+      "Redline": 5200,
+      "Rev lmt": 5400,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "2003-2007 Chevrolet Express 2500/3500 (6.0L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "9.4:1",
+      "Power": 300,
+      "Power RPM": 4400,
+      "Torque": 360,
+      "Torque RPM": 4000,
+      "Redline": 5200,
+      "Rev lmt": 5400,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "2003-2007 GMC Savana 2500/3500 (6.0L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "9.4:1",
+      "Power": 300,
+      "Power RPM": 4400,
+      "Torque": 360,
+      "Torque RPM": 4000,
+      "Redline": 5200,
+      "Rev lmt": 5400,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    }
+  ]
+}

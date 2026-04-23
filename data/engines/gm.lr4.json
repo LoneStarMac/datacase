@@ -1,0 +1,89 @@
+{
+  "manufacturer": "GM",
+  "code": "LR4",
+  "displacement_cc": 4800,
+  "cylinders": 8,
+  "configuration": "V",
+  "valves_per_cyl": 2,
+  "head_material": "aluminum",
+  "block_material": "cast iron",
+  "bore_mm": 96.0,
+  "stroke_mm": 83.0,
+  "turbocharged": false,
+  "supercharged": false,
+  "dimensions": {
+    "length_mm": 660,
+    "width_mm": 550,
+    "height_mm": 690,
+    "weight_kg": 236,
+    "weight_dry_kg": 215
+  },
+  "bellhousing_pattern": "GM LS",
+  "engine_mount_style": "GM truck",
+  "oilpan_orientation": "rear-sump",
+  "swap_tags": [
+    "iron_block",
+    "budget_build",
+    "ls_swap",
+    "gen3_ls",
+    "rev_happy",
+    "lightweight"
+  ],
+  "common_swap_candidates": [
+    "S10/S15",
+    "Fox body Mustang",
+    "AE86",
+    "RX-7",
+    "MX-5",
+    "240SX",
+    "FJ80",
+    "GM A-body",
+    "GM G-body",
+    "GM F-body"
+  ],
+  "notes": "The LR4 is the smallest displacement iron-block Gen III LS, producing modest torque but revving more freely than its larger siblings thanks to the shorter 83mm stroke. Shares the same external block dimensions and bellhousing pattern as the LM7/LQ4, making it an easy iron-block swap. Less common in junkyards than the LM7 but an inexpensive entry point. Responds well to cam upgrades and head porting. The short stroke makes it a candidate for high-rpm naturally aspirated builds. Uses 24x reluctor wheel and cathedral port heads.",
+  "applications": [
+    {
+      "Application": "1999-2007 Chevrolet Silverado 1500 (4.8L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "9.5:1",
+      "Power": 270,
+      "Power RPM": 5600,
+      "Torque": 285,
+      "Torque RPM": 4000,
+      "Redline": 6000,
+      "Rev lmt": 6200,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "1999-2007 GMC Sierra 1500 (4.8L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "9.5:1",
+      "Power": 270,
+      "Power RPM": 5600,
+      "Torque": 285,
+      "Torque RPM": 4000,
+      "Redline": 6000,
+      "Rev lmt": 6200,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "2000-2006 Chevrolet Tahoe (4.8L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "9.5:1",
+      "Power": 270,
+      "Power RPM": 5600,
+      "Torque": 285,
+      "Torque RPM": 4000,
+      "Redline": 6000,
+      "Rev lmt": 6200,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    }
+  ]
+}

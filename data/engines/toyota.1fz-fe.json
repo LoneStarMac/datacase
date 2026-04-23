@@ -1,0 +1,69 @@
+{
+  "manufacturer": "Toyota",
+  "code": "1FZ-FE",
+  "displacement_cc": 4477,
+  "cylinders": 6,
+  "configuration": "inline",
+  "valves_per_cyl": 4,
+  "head_material": "aluminum",
+  "block_material": "cast iron",
+  "bore_mm": 100.0,
+  "stroke_mm": 95.0,
+  "turbocharged": false,
+  "supercharged": false,
+  "dimensions": {
+    "length_mm": 740,
+    "width_mm": 660,
+    "height_mm": 700,
+    "weight_kg": 230,
+    "weight_dry_kg": 208
+  },
+  "bellhousing_pattern": "Toyota 1FZ",
+  "engine_mount_style": "Toyota FJ80 front",
+  "oilpan_orientation": "rear-sump",
+  "swap_tags": [
+    "fj80",
+    "land_cruiser",
+    "inline6",
+    "toyota",
+    "naturally_aspirated",
+    "iron_block"
+  ],
+  "common_swap_candidates": [
+    "LS swap (LM7, L33, LSx) into FJ80",
+    "1HD-FTE diesel into FJ80",
+    "1GR-FE V6 into FJ80",
+    "2UZ-FE V8 into FJ80"
+  ],
+  "notes": "The 1FZ-FE replaced the carbureted 3F-E in the FJ80 Land Cruiser starting in 1993, bringing fuel injection and DOHC 24-valve architecture. Known for exceptional reliability and longevity; high-mileage examples are common. The cast-iron block contributes to durability but also weight. Compression ratio is 9.0:1. Common upgrades include aftermarket supercharger kits (e.g., Procharger, TRD). The engine pairs with the A442F 4-speed automatic or R151F 5-speed manual in FJ80 applications. Due to its age and emissions limitations, many FJ80 owners opt to swap in a more modern powerplant.",
+  "applications": [
+    {
+      "Application": "1993-1997 Toyota Land Cruiser FJ80 / FZJ80",
+      "Mkt": "USA/Global",
+      "Addl": null,
+      "Comp": "9.0:1",
+      "Power": 212,
+      "Power RPM": 4600,
+      "Torque": 275,
+      "Torque RPM": 3200,
+      "Redline": 5000,
+      "Rev lmt": null,
+      "Intake Manifold": "Toyota sequential multi-point",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "1993-1997 Toyota Land Cruiser FZJ80 (Australian/JDM)",
+      "Mkt": "AU/JDM",
+      "Addl": null,
+      "Comp": "9.0:1",
+      "Power": 212,
+      "Power RPM": 4600,
+      "Torque": 275,
+      "Torque RPM": 3200,
+      "Redline": 5000,
+      "Rev lmt": null,
+      "Intake Manifold": "Toyota sequential multi-point",
+      "Fuel Injection": "sequential MPFI"
+    }
+  ]
+}

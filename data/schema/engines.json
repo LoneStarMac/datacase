@@ -22,6 +22,11 @@
       "cylinders": {
         "type": "integer"
       },
+      "configuration": {
+        "type": "string",
+        "description": "Engine layout: inline, V, boxer, rotary, W",
+        "enum": ["inline", "V", "boxer", "rotary", "W", "other"]
+      },
       "valves_per_cyl": {
         "type": "integer"
       },
@@ -58,6 +63,45 @@
       "supercharged": {
         "type": "boolean"
       },
+      "dimensions": {
+        "type": "object",
+        "description": "Physical engine dimensions for engine bay fitment planning",
+        "properties": {
+          "length_mm": { "type": "number" },
+          "width_mm": { "type": "number" },
+          "height_mm": { "type": "number" },
+          "weight_kg": { "type": "number", "description": "Wet weight with fluids" },
+          "weight_dry_kg": { "type": "number", "description": "Dry weight without fluids" }
+        }
+      },
+      "bellhousing_pattern": {
+        "type": "string",
+        "description": "Bellhousing bolt pattern family, e.g. 'GM LS', 'Honda K', 'Toyota 1FZ', 'VW/Audi 02Q'"
+      },
+      "engine_mount_style": {
+        "type": "string",
+        "description": "Mount configuration, e.g. 'GM truck side-mount', 'Honda front-mount', 'Toyota solid mount'"
+      },
+      "oilpan_orientation": {
+        "type": "string",
+        "description": "Critical for swap fitment: front-sump, rear-sump, center-sump, or dry-sump",
+        "enum": ["front-sump", "rear-sump", "center-sump", "dry-sump", "other"]
+      },
+      "swap_tags": {
+        "type": "array",
+        "description": "Searchable tags describing swap context",
+        "items": {
+          "type": "string"
+        },
+        "examples": [["junkyard_common", "budget_build", "iron_block", "ls_swap"]]
+      },
+      "common_swap_candidates": {
+        "type": "array",
+        "description": "Engine codes this engine commonly swaps into or receives",
+        "items": {
+          "type": "string"
+        }
+      },
       "notes": {
         "type": "string"
       },
@@ -75,70 +119,42 @@
               "type": "string"
             },
             "Mkt": {
-              "type": [
-                "string",
-                "null"
-              ]
+              "type": ["string", "null"]
             },
             "Addl": {
-              "type": [
-                "string",
-                "null"
-              ]
+              "type": ["string", "null"]
             },
             "Comp": {
-              "type": [
-                "string",
-                "null"
-              ]
+              "type": ["string", "null"]
             },
             "Power": {
-              "type": "number"
+              "type": ["number", "string"],
+              "description": "Peak power in hp (or string like '290-310' for a range)"
             },
             "Power RPM": {
-              "type": [
-                "number",
-                "null"
-              ]
+              "type": ["number", "null"]
             },
             "Torque": {
-              "type": "number"
+              "type": ["number", "string"],
+              "description": "Peak torque in lb-ft (or string like '320-335' for a range)"
             },
             "Torque RPM": {
-              "type": [
-                "number",
-                "null"
-              ]
+              "type": ["number", "null"]
             },
             "Redline": {
-              "type": [
-                "number",
-                "null"
-              ]
+              "type": ["number", "null"]
             },
             "Rev lmt": {
-              "type": [
-                "number",
-                "null"
-              ]
+              "type": ["number", "null"]
             },
             "iVTEC Engagement": {
-              "type": [
-                "number",
-                "null"
-              ]
+              "type": ["number", "null"]
             },
             "Intake Manifold": {
-              "type": [
-                "string",
-                "null"
-              ]
+              "type": ["string", "null"]
             },
             "Fuel Injection": {
-              "type": [
-                "string",
-                "null"
-              ]
+              "type": ["string", "null"]
             }
           }
         }

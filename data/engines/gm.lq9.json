@@ -1,0 +1,74 @@
+{
+  "manufacturer": "GM",
+  "code": "LQ9",
+  "displacement_cc": 5967,
+  "cylinders": 8,
+  "configuration": "V",
+  "valves_per_cyl": 2,
+  "head_material": "aluminum",
+  "block_material": "cast iron",
+  "bore_mm": 101.6,
+  "stroke_mm": 92.0,
+  "turbocharged": false,
+  "supercharged": false,
+  "dimensions": {
+    "length_mm": 660,
+    "width_mm": 550,
+    "height_mm": 690,
+    "weight_kg": 236,
+    "weight_dry_kg": 215
+  },
+  "bellhousing_pattern": "GM LS",
+  "engine_mount_style": "GM truck",
+  "oilpan_orientation": "rear-sump",
+  "swap_tags": [
+    "junkyard_common",
+    "iron_block",
+    "ls_swap",
+    "gen3_ls",
+    "high_displacement"
+  ],
+  "common_swap_candidates": [
+    "S10/S15",
+    "Fox body Mustang",
+    "AE86",
+    "RX-7",
+    "MX-5",
+    "240SX",
+    "FJ80",
+    "GM A-body",
+    "GM G-body",
+    "GM F-body"
+  ],
+  "notes": "The LQ9 is the high-output 6.0L variant of the iron-block Gen III LS, externally nearly identical to the LQ4 but with higher compression (10.1:1), a more aggressive cam profile, and revised cylinder heads (243 castings). Found in premium GMT800 SUVs and the rare SSR roadster. Produces significantly more power than the LQ4 from the factory. Shares all Gen III architecture with 24x reluctor, cathedral port heads, and truck intake. A desirable donor for iron-block swap builds seeking more power without turbocharging.",
+  "applications": [
+    {
+      "Application": "2002-2006 Cadillac Escalade EXT/ESV (6.0L HO)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "10.1:1",
+      "Power": 345,
+      "Power RPM": 5200,
+      "Torque": 380,
+      "Torque RPM": 4000,
+      "Redline": 5600,
+      "Rev lmt": 5800,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "2003-2006 Chevrolet SSR (6.0L)",
+      "Mkt": "USA",
+      "Addl": null,
+      "Comp": "10.1:1",
+      "Power": 300,
+      "Power RPM": 5200,
+      "Torque": 360,
+      "Torque RPM": 4000,
+      "Redline": 5600,
+      "Rev lmt": 5800,
+      "Intake Manifold": "GM truck composite",
+      "Fuel Injection": "sequential MPFI"
+    }
+  ]
+}

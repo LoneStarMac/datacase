@@ -1,0 +1,88 @@
+{
+  "manufacturer": "GM",
+  "code": "LS6",
+  "displacement_cc": 5665,
+  "cylinders": 8,
+  "configuration": "V",
+  "valves_per_cyl": 2,
+  "head_material": "aluminum",
+  "block_material": "aluminum",
+  "bore_mm": 99.0,
+  "stroke_mm": 92.0,
+  "turbocharged": false,
+  "supercharged": false,
+  "dimensions": {
+    "length_mm": 660,
+    "width_mm": 550,
+    "height_mm": 690,
+    "weight_kg": 188,
+    "weight_dry_kg": 168
+  },
+  "bellhousing_pattern": "GM LS",
+  "engine_mount_style": "GM car",
+  "oilpan_orientation": "front-sump",
+  "swap_tags": [
+    "aluminum_block",
+    "ls_swap",
+    "gen3_ls",
+    "performance",
+    "track_build"
+  ],
+  "common_swap_candidates": [
+    "S10/S15",
+    "Fox body Mustang",
+    "AE86",
+    "RX-7",
+    "MX-5",
+    "240SX",
+    "FJ80",
+    "GM A-body",
+    "GM G-body",
+    "GM F-body"
+  ],
+  "notes": "The LS6 is the performance-focused evolution of the LS1, sharing identical bore, stroke, and displacement but featuring revised LS6 cylinder heads (improved port shape and larger valves), a higher-lift camshaft, revised intake manifold with larger plenum, revised valley cover, and 10.5:1 compression. Produces 385-405hp depending on application year. The C5 Z06 variant uses a dry-sump oiling system; the CTS-V uses a conventional wet-sump. LS6 heads and intake are popular upgrades for LS1 engines. Uses 24x reluctor wheel. One of the most desirable naturally aspirated Gen III LS donors for performance swap applications.",
+  "applications": [
+    {
+      "Application": "2001-2004 Chevrolet Corvette C5 Z06",
+      "Mkt": "USA",
+      "Addl": "dry-sump oiling system",
+      "Comp": "10.5:1",
+      "Power": 405,
+      "Power RPM": 6000,
+      "Torque": 400,
+      "Torque RPM": 4800,
+      "Redline": 6500,
+      "Rev lmt": 6600,
+      "Intake Manifold": "LS6 aluminum high-flow",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "2001 Chevrolet Corvette C5 Z06 (first year)",
+      "Mkt": "USA",
+      "Addl": "dry-sump oiling system; first model year LS6",
+      "Comp": "10.5:1",
+      "Power": 385,
+      "Power RPM": 6000,
+      "Torque": 385,
+      "Torque RPM": 4800,
+      "Redline": 6500,
+      "Rev lmt": 6600,
+      "Intake Manifold": "LS6 aluminum high-flow",
+      "Fuel Injection": "sequential MPFI"
+    },
+    {
+      "Application": "2004 Cadillac CTS-V",
+      "Mkt": "USA",
+      "Addl": "wet-sump; front-sump pan; rear-wheel-drive performance sedan",
+      "Comp": "10.5:1",
+      "Power": 400,
+      "Power RPM": 6000,
+      "Torque": 395,
+      "Torque RPM": 4800,
+      "Redline": 6500,
+      "Rev lmt": 6600,
+      "Intake Manifold": "LS6 aluminum high-flow",
+      "Fuel Injection": "sequential MPFI"
+    }
+  ]
+}
